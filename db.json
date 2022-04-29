@@ -1,19 +1,138 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "hello"
-    },
-    {
-      "id": 2,
-      "title": "hello 2"
-    },
-    {
-      "id": 3,
-      "title": "hello 3"
+  "flatten": {
+    "description": "Write a recursive function that flattens a nested array",
+    "hint": "you will need to loop over to all levels and build a one level array",
+    "data": {
+      "example1": {
+        "input": [
+          [
+            1,
+            [
+              2,
+              [
+                3,
+                4
+              ],
+              []
+            ]
+          ],
+          [
+            5
+          ],
+          [],
+          [
+            6,
+            7
+          ]
+        ],
+        "output": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "example2": {
+        "input": [
+          [
+            "a",
+            [
+              "b",
+              "c",
+              [
+                "d",
+                "e"
+              ]
+            ]
+          ],
+          "a",
+          [
+            "b",
+            "c",
+            [
+              "d",
+              "e"
+            ]
+          ]
+        ],
+        "output": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
     }
-  ],
-  "profile": {
-    "name": "typicode 4"
+  },
+  "expression": {
+    "description": "Write a function that will check the validity of the expression",
+    "hint": "expression is valid when all of the opened brackets has it's own closed ones",
+    "data": {
+      "example1": {
+        "input": "(){}}[]",
+        "output": false
+      },
+      "example2": {
+        "input": "((){}[])(){}[]",
+        "output": true
+      }
+    }
+  },
+  "chain": {
+    "description": "Write a generic function chainer that takes a starting value, and an array of functions to execute on it",
+    "note": "!!!YOUR GENERIC FUNCTION SHOULD BE ABLE TO WORK WITH THE ASYNC FUNCTIONS AS WELL!!!",
+    "hint": "The input for each function is the output of the previous function (except the first function, which takes the starting value as its input). Return the final value after execution is complete.",
+    "data": {
+      "example1": {
+        "input_code": "function add(num) { return num + 1;}  function mult(num) { return num * 30; } chain(2,[add, mult]);",
+        "hint": "initial value is 2, after add function execution value will be 3 (2 + 1), and after mult function execution the value should be 90 (3 * 30)",
+        "output": "90"
+      },
+      "example2": {
+        "input_code": "function drop(num) { return num / 2;}  function doSomethingAsync(num) { return Promise.resolve(num * 3); } chain(10,[drop, doSomethingAsync]);",
+        "hint": "initial value is 10, after drop function execution value will be 5 (10 / 2), and after doSomethingAsync function execution(which is async function) the value should be 15 (3 * 15)",
+        "output": "90"
+      }
+    }
+  },
+  "random_calculation": {
+    "description": "Write a generic function random calculator that will calculate and return total value of all of the array element.",
+    "hint": "You should have several order for calculation(+, -, /, *), but if the current number is less than 0, then the calculation order should be reversed(+, -, /, *), but the you shouldn't lose the calculation state",
+    "data": {
+      "example1": {
+        "input": [
+          1,
+          2,
+          2,
+          3,
+          -2,
+          1,
+          2,
+          3
+        ],
+        "hint": "1 + 2 = (3) -> 3 - 2 = (1) -> 2 / 3 = (0.333) -> 0.333 * -2 = (-0.666) -> -0.666 / 1 = (-0.666) -> -0.666 - 2 = (-2.666) -> -2.666 + 3 = 0.4",
+        "output": 0.4
+      },
+      "example2": {
+        "input": [
+          1,
+          2,
+          -2,
+          3,
+          2,
+          1,
+          2,
+          3
+        ],
+        "hint": "1 + 2 = (3) -> 3 - -2 = (5) -> 5 + 3 = (8) -> 8 * 3 = (24) -> 24 / 2 = (12) -> 12 - 1 = (11) -> 11 + 2 = (13) -> 13 * 3 = 39",
+        "output": 39
+      }
+    }
   }
 }
