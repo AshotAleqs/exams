@@ -1,172 +1,152 @@
-{
-  "flatten": {
-    "description": "Write a recursive function that flattens a nested array",
-    "hint": "you will need to loop over to all levels and build a one level array",
-    "data": {
-      "example1": {
-        "input": [
-          [
-            1,
-            [
-              2,
-              [
-                3,
-                4
-              ],
-              []
-            ]
-          ],
-          [
-            5
-          ],
-          [],
-          [
-            6,
-            7
-          ]
-        ],
-        "output": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7
-        ]
-      },
-      "example2": {
-        "input": [
-          [
-            "a",
-            [
-              "b",
-              "c",
-              [
-                "d",
-                "e"
-              ]
-            ]
-          ],
-          "a",
-          [
-            "b",
-            "c",
-            [
-              "d",
-              "e"
-            ]
-          ]
-        ],
-        "output": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7
-        ]
-      }
-    }
+[
+  {
+    "tag": "image",
+    "thumb": "https://picsum.photos/id/0/5616/3744",
+    "url": "https://picsum.photos/id/0/5616/3744"
   },
-  "expression": {
-    "description": "Write a function that will check the validity of the expression",
-    "hint": "expression is valid when all of the opened brackets has it's own closed ones",
-    "data": {
-      "example1": {
-        "input": "(){}}[]",
-        "output": false
-      },
-      "example2": {
-        "input": "((){}[])(){}[]",
-        "output": true
-      }
-    }
+  {
+    "tag": "image",
+    "thumb": "https://picsum.photos/id/1/5616/3744",
+    "url": "https://picsum.photos/id/1/5616/3744"
   },
-  "chain": {
-    "description": "Write a generic function chainer that takes a starting value, and an array of functions to execute on it",
-    "note": "!!!YOUR GENERIC FUNCTION SHOULD BE ABLE TO WORK WITH THE ASYNC FUNCTIONS AS WELL!!!",
-    "hint": "The input for each function is the output of the previous function (except the first function, which takes the starting value as its input). Return the final value after execution is complete.",
-    "data": {
-      "example1": {
-        "input_code": "function add(num) { return num + 1;}  function mult(num) { return num * 30; } chain(2,[add, mult]);",
-        "hint": "initial value is 2, after add function execution value will be 3 (2 + 1), and after mult function execution the value should be 90 (3 * 30)",
-        "output": "90"
-      },
-      "example2": {
-        "input_code": "function drop(num) { return num / 2;}  function doSomethingAsync(num) { return Promise.resolve(num * 3); } chain(10,[drop, doSomethingAsync]);",
-        "hint": "initial value is 10, after drop function execution value will be 5 (10 / 2), and after doSomethingAsync function execution(which is async function) the value should be 15 (3 * 15)",
-        "output": "90"
-      }
-    }
+  {
+    "tag": "image",
+    "thumb": "https://picsum.photos/id/10/2500/1667",
+    "url": "https://picsum.photos/id/10/2500/1667"
   },
-  "random_calculation": {
-    "description": "Write a generic function random calculator that will calculate and return total value of all of the array element.",
-    "hint": "You should have several order for calculation(+, -, /, *), but if the current number is less than 0, then the calculation order should be reversed(+, -, /, *), but the you shouldn't lose the calculation state",
-    "data": {
-      "example1": {
-        "input": [
-          1,
-          2,
-          2,
-          3,
-          -2,
-          1,
-          2,
-          3
-        ],
-        "hint": "1 + 2 = (3) -> 3 - 2 = (1) -> 2 / 3 = (0.333) -> 0.333 * -2 = (-0.666) -> -0.666 / 1 = (-0.666) -> -0.666 - 2 = (-2.666) -> -2.666 + 3 = 0.4",
-        "output": 0.4
-      },
-      "example2": {
-        "input": [
-          1,
-          2,
-          -2,
-          3,
-          2,
-          1,
-          2,
-          3
-        ],
-        "hint": "1 + 2 = (3) -> 3 - -2 = (5) -> 5 + 3 = (8) -> 8 * 3 = (24) -> 24 / 2 = (12) -> 12 - 1 = (11) -> 11 + 2 = (13) -> 13 * 3 = 39",
-        "output": 39
-      }
-    }
+  {
+    "tag": "image",
+    "thumb": "https://picsum.photos/id/100/2500/1656",
+    "url": "https://picsum.photos/id/100/2500/1656"
   },
-  "emails": [
-    {
-      "id": "loremipsum@gmail.com",
-      "email": "loremipsum@gmail.com"
-    },
-    {
-      "id": "ashotaleqs@gmail.com",
-      "email": "ashotaleqs@gmail.com"
-    },
-    {
-      "id": "valod@gmail.com",
-      "email": "valod@gmail.com"
-    },
-    {
-      "id": "vaxo@gmail.com",
-      "email": "vaxo@gmail.com"
-    },
-    {
-      "id": "vaxinak@gmail.com",
-      "email": "vaxinak@gmail.com"
-    },
-    {
-      "id": "nunufar@gmail.com",
-      "email": "nunufar@gmail.com"
-    },
-    {
-      "id": "hamazasp@gmail.com",
-      "email": "hamazasp@gmail.com"
-    },
-    {
-      "id": "bdeshx@gmail.com",
-      "email": "bdeshx@gmail.com"
-    }
-  ]
-}
+  {
+    "tag": "image",
+    "thumb": "https://picsum.photos/id/1000/5626/3635",
+    "url": "https://picsum.photos/id/1000/5626/3635"
+  },
+  {
+    "tag": "image",
+    "thumb": "https://picsum.photos/id/1001/5616/3744",
+    "url": "https://picsum.photos/id/1001/5616/3744"
+  },
+  {
+    "tag": "image",
+    "thumb": "https://picsum.photos/id/1002/4312/2868",
+    "url": "https://picsum.photos/id/1002/4312/2868"
+  },
+  {
+    "tag": "image",
+    "thumb": "https://picsum.photos/id/1003/1181/1772",
+    "url": "https://picsum.photos/id/1003/1181/1772"
+  },
+  {
+    "tag": "image",
+    "thumb": "https://picsum.photos/id/1004/5616/3744",
+    "url": "https://picsum.photos/id/1004/5616/3744"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/1005/5760/3840",
+    "thumb": "https://picsum.photos/id/1005/5760/3840"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/1006/3000/2000",
+    "thumb": "https://picsum.photos/id/1006/3000/2000"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/1008/5616/3744",
+    "thumb": "https://picsum.photos/id/1008/5616/3744"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/1009/5000/7502",
+    "thumb": "https://picsum.photos/id/1009/5000/7502"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/101/2621/1747",
+    "thumb": "https://picsum.photos/id/101/2621/1747"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/1010/5184/3456",
+    "thumb": "https://picsum.photos/id/1010/5184/3456"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/1011/5472/3648",
+    "thumb": "https://picsum.photos/id/1011/5472/3648"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/1012/3973/2639",
+    "thumb": "https://picsum.photos/id/1012/3973/2639"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/1013/4256/2832",
+    "thumb": "https://picsum.photos/id/1013/4256/2832"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/1014/6016/4000",
+    "thumb": "https://picsum.photos/id/1014/6016/4000"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/1015/6000/4000",
+    "thumb": "https://picsum.photos/id/1015/6000/4000"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/1016/3844/2563",
+    "thumb": "https://picsum.photos/id/1016/3844/2563"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/1018/3914/2935",
+    "thumb": "https://picsum.photos/id/1018/3914/2935"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/1019/5472/3648",
+    "thumb": "https://picsum.photos/id/1019/5472/3648"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/102/4320/3240",
+    "thumb": "https://picsum.photos/id/102/4320/3240"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/1020/4288/2848",
+    "thumb": "https://picsum.photos/id/1020/4288/2848"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/1021/2048/1206",
+    "thumb": "https://picsum.photos/id/1021/2048/1206"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/1022/6000/3376",
+    "thumb": "https://picsum.photos/id/1022/6000/3376"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/1023/3955/2094",
+    "thumb": "https://picsum.photos/id/1023/3955/2094"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/1024/1920/1280",
+    "thumb": "https://picsum.photos/id/1024/1920/1280"
+  },
+  {
+    "tag": "image",
+    "url": "https://picsum.photos/id/1025/4951/3301",
+    "thumb": "https://picsum.photos/id/1025/4951/3301"
+  }
+]
