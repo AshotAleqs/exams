@@ -1,4 +1,5 @@
-[
+{
+  "images": [
   {
     "tag": "image",
     "thumb": "https://picsum.photos/id/0/5616/3744",
@@ -150,3 +151,5 @@
     "thumb": "https://picsum.photos/id/1025/4951/3301"
   }
 ]
+
+}
